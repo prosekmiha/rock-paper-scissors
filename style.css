@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    font-family: 'Coda', cursive;
+    
+}
+
+
+body {
+    overflow: hidden;
+    background-image: linear-gradient(to left bottom, #5794f6, #5f88f9, #6f7af9, #836af6, #9855ee);  
+    height:1000px;        
+    
+}
+
+.flex-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+    background-color: #e4d7fc;
+    height: 80vh;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 3px 6px 106px 43px rgba(0,0,0,0.28);
+  }
+
+img {
+    border-radius: 80%;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+img:hover {
+    box-shadow: 20px 20px 100px grey;
+}
+
+.popup {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    top: 20vh;
+    border-radius: 30px;
+    background-color: #e3e6e5;
+    height: 30%;
+    width: 40%;
+    display: none;
+    box-shadow: 3px 6px 106px 43px rgba(0,0,0,0.28);
+    border: 1px solid rgba(0,0,0,0.28);
+}
+
+#p {
+    position: relative;
+    top: 20%;
+}
+
+#racizbira {
+  position: relative;
+  top: 30%;
+}
+
+#tryagain {
+    position: relative;
+    top: 40%;
+    width: 80%;
+    cursor: pointer;
+}
+
+#tryagain:hover {
+    transform: translateY(10px);
+  
+}
+
+@media (max-width: 1350px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  img {
+    width: 30vw;
+  }
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 700px) {
+  .popup {
+    width: 90%;
+    height: 60%;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+}
+
+
+
+
